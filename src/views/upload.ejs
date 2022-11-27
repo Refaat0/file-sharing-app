@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upload</title>
+        <link rel="stylesheet" type="text/css" href="/upload.css">
+    </head>
+    <body>
+        <header>
+            <h1>Upload</h1>
+            <nav>
+                <a href="/views/files/download">Download</a>
+                <a href="/views/files/upload">Upload</a>
+            </nav>
+        </header>
+
+        <div class="upload-container">
+            <label for="file-upload" class="custom-file-upload">
+                <div class="label">
+                    Upload A File (10mb limit)
+                </div>
+                <form action="/api/files/upload" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file">
+                    <input type="submit" name="action" value="upload">
+                </form>
+            </label>
+
+        </div>
+
+    </body>
+</html>

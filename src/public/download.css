@@ -1,0 +1,72 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0a010a;
+    color: #d9fcd9;
+}
+
+header {
+    margin: 3rem;
+}
+
+header h1 {
+    text-align: center;
+    margin: 1rem;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1rem 0 1rem;
+    text-decoration: none;
+}
+
+.downloads {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    width: 12rem;
+    height: 12rem;
+    margin: 1rem;
+    border-radius: 12px;
+    background-color: #f9fff9;
+    box-shadow: 0 3px 3px 2px rgba(226, 97, 97, 0.2);
+    transition: 3s ease-in;
+}
+
+.download p {
+    color: #0a010a;
+    margin: 4px 0 4px 0;
+}
+
+.download-button input {
+    border: none;
+    background-color: #f9fff9;
+    color: #0a010a;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 2rem;
+    transition: 50ms ease-out;
+}
+
+.download-button input:hover {
+    font-size: 25px;
+}
